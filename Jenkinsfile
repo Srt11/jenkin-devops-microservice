@@ -1,12 +1,14 @@
 pipeline {
 
-	 //agent any
+	 agent any
 	 agent{docker {image 'node:13.8'}}
 	 stages{
 			stage('build'){
 			  steps{
-			       sh 'node --version'
+			       //sh 'node --version'
 			       echo "build"
+				   echo "$PATH"
+
 			  }
 			  }
 			stage('test'){

@@ -10,7 +10,7 @@ pipeline {
 	 stages{
 			stage('checkout'){
 			  steps{
-			       //sh 'node --version'
+			       sh 'mvn --version'
 			       echo "build"
 				   echo "$PATH"
 
